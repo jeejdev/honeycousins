@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Espadas - Honey Cousins</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      background: #3a2a14;
+      color: #fff8e1;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #5e3d1e;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      color: #ffcb3b;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .table-dark th, .table-dark td {
+      color: #fff8e1;
+      background-color: #4d3b1e;
+    }
+    footer {
+      background: #2a1b0d;
+      padding: 30px;
+      text-align: center;
+      color: #ccc;
+    }
+    nav {
+      background-color: #4d3215;
+    }
+    .nav-link {
+      color: #ffcb3b !important;
+    }
+    .nav-link:hover {
+      color: #fff !important;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-warning" href="index.html">Honey Cousins</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./espadas.html"><i class="fas fa-sword"></i> Dano das Espadas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./ranking.html"><i class="fas fa-list-ol"></i> Ranking Teste</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./reliquias.html"><i class="fas fa-gem"></i> Relíquias</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <img src="assets/honeycousins.png" alt="Honey Cousins Logo">
+  <h1>Economia das Espadas</h1>
+</header>
+
+<section class="container">
+  <h2>Ilha Atual - XZ City</h2>
+  <h5 class="text-warning">Espada One Punch</h5>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr><th>Rank</th><th>Qtd</th><th>Custo</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>E</td><td>1</td><td>5.20 Qi</td></tr>
+      <tr><td>D</td><td>3</td><td>15.60 Qi</td></tr>
+      <tr><td>C</td><td>9</td><td>46.80 Qi</td></tr>
+      <tr><td>B</td><td>27</td><td>140.40 Qi</td></tr>
+      <tr><td>A</td><td>81</td><td>421.20 Qi</td></tr>
+      <tr><td>S</td><td>243</td><td>1.26 Sx</td></tr>
+      <tr><td>SS</td><td>729</td><td>3.79 Sx</td></tr>
+    </tbody>
+  </table>
+
+  <h5 class="text-warning">Dano Base (Rank N+)</h5>
+  <table class="table table-dark">
+    <thead><tr><th>Rank</th><th>Dano</th></tr></thead>
+    <tbody>
+      <tr><td>E</td><td>51.61 Qa</td></tr>
+      <tr><td>D</td><td>98.01 Qa</td></tr>
+      <tr><td>C</td><td>186.11 Qa</td></tr>
+      <tr><td>B</td><td>353.42 Qa</td></tr>
+      <tr><td>A</td><td>671.23 Qa</td></tr>
+      <tr><td>S</td><td>1.27 Qi</td></tr>
+      <tr><td>SS</td><td>2.43 Qi</td></tr>
+    </tbody>
+  </table>
+
+  <h5 class="text-warning">Com Encantamento Sharpness 8</h5>
+  <table class="table table-dark">
+    <thead><tr><th>Rank</th><th>Dano</th></tr></thead>
+    <tbody>
+      <tr><td>E</td><td>505.62 Qa</td></tr>
+      <tr><td>D</td><td>959.87 Qa</td></tr>
+      <tr><td>C</td><td>1.82 Qi</td></tr>
+      <tr><td>B</td><td>3.46 Qi</td></tr>
+      <tr><td>A</td><td>6.57 Qi</td></tr>
+      <tr><td>S</td><td>12.44 Qi</td></tr>
+      <tr><td>SS</td><td>23.81 Qi</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="container">
+  <h2>Penúltima Ilha - Dragon City</h2>
+
+  <h5 class="text-warning">Com Sharpness 8 e Buff de Rank SS</h5>
+  <table class="table table-dark">
+    <thead><tr><th>Rank</th><th>Dano</th></tr></thead>
+    <tbody>
+      <tr><td>E</td><td>6.09 Qa</td></tr>
+      <tr><td>D</td><td>11.57 Qa</td></tr>
+      <tr><td>C</td><td>21.98 Qa</td></tr>
+      <tr><td>B</td><td>41.77 Qa</td></tr>
+      <tr><td>A</td><td>79.36 Qa</td></tr>
+      <tr><td>S</td><td>150.79 Qa</td></tr>
+      <tr><td>SS</td><td>286.50 Qa</td></tr>
+    </tbody>
+  </table>
+
+  <h5 class="text-warning">Sem Sharpness 8 (com Buff de Rank SS)</h5>
+  <table class="table table-dark">
+    <thead><tr><th>Rank</th><th>Dano</th></tr></thead>
+    <tbody>
+      <tr><td>E</td><td>0.62 Qa</td></tr>
+      <tr><td>D</td><td>1.18 Qa</td></tr>
+      <tr><td>C</td><td>2.25 Qa</td></tr>
+      <tr><td>B</td><td>4.27 Qa</td></tr>
+      <tr><td>A</td><td>8.11 Qa</td></tr>
+      <tr><td>S</td><td>15.40 Qa</td></tr>
+      <tr><td>SS</td><td>29.26 Qa</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  <p>&copy; 2025 Honey Cousins - Arise CrossOver Guild</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

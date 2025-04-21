@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Honey Cousins - Arise CrossOver</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+      body {
+        background: #3a2a14;
+        color: #fff8e1;
+        font-family: "Segoe UI", sans-serif;
+      }
+      header {
+        text-align: center;
+        padding: 40px 20px;
+        background: #5e3d1e;
+      }
+      header img {
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 3rem;
+        color: #ffcb3b;
+      }
+      section {
+        padding: 50px 20px;
+      }
+      .big-img {
+        width: 100%;
+        max-width: 600px;
+        margin: 30px auto;
+        display: block;
+        border-radius: 12px;
+      }
+      footer {
+        background: #2a1b0d;
+        padding: 30px;
+        text-align: center;
+        color: #ccc;
+      }
+      nav {
+        background-color: #4d3215;
+      }
+      .nav-link {
+        color: #ffcb3b !important;
+      }
+      .nav-link:hover {
+        color: #fff !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="index.html"><i class="fas fa-crown"></i> Honey Cousins</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#calculadora"><i class="fas fa-calculator"></i> Calculadora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./espadas.html"><i class="fas fa-sword"></i> Dano das Espadas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ranking.html"><i class="fas fa-list-ol"></i> Ranking Teste</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./reliquias.html"><i class="fas fa-gem"></i> Relíquias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#midias"><i class="fas fa-photo-film"></i> Mídias</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <img src="assets/honeycousins.png" alt="Honey Cousins Logo" />
+      <h1><i class="fas fa-fire"></i> Guilda Honey Cousins</h1>
+      <p><i class="fas fa-heart"></i> Arise CrossOver - Unidos pelo Mel e pela Força!</p>
+    </header>
+
+    <section class="container" id="calculadora">
+      <h2><i class="fas fa-crosshairs"></i> Calculadora de Dano</h2>
+      <label for="vidaBoss">Vida do Inimigo:</label>
+      <input type="number" id="vidaBoss" step="0.01" placeholder="Ex: 3.6" class="form-control" />
+
+      <label for="unidade">Unidade:</label>
+      <select id="unidade" class="form-select">
+        <option value="1">Normal</option>
+        <option value="1e3">K (mil)</option>
+        <option value="1e6">M (milhão)</option>
+        <option value="1e9">B (bilhão)</option>
+        <option value="1e12">T (trilhão)</option>
+        <option value="1e15">Qa (quadrilhão)</option>
+        <option value="1e18" selected>Qi (quintilhão)</option>
+      </select>
+
+      <label for="tipo">Tipo de inimigo:</label>
+      <select id="tipo" class="form-select">
+        <option value="mob">Mob Normal (5%)</option>
+        <option value="boss">Boss de Dungeon (1%)</option>
+      </select>
+
+      <button onclick="calcularDano()" class="btn btn-warning mt-3">
+        <i class="fas fa-bolt"></i> Calcular
+      </button>
+      <div class="result mt-4" id="resultado"></div>
+    </section>
+
+    <section class="container text-center" id="midias">
+      <h2><i class="fas fa-photo-video"></i> Mídias da Guilda</h2>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-5 mb-4">
+          <div class="card bg-dark text-light border-warning h-100">
+            <div class="card-header bg-warning text-dark fw-bold">
+              <i class="fas fa-user-astronaut"></i> Primo Mumu
+            </div>
+            <img src="assets/primo_mumu.jpg" class="card-img-top rounded-0" alt="Primo Murilo" />
+            <div class="card-body">
+              <p class="card-text">
+                Nosso herói intergaláctico do mel e o nosso meio-primo robô, Bumblebee..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 mb-4">
+          <div class="card bg-dark text-light border-warning h-100">
+            <div class="card-header bg-warning text-dark fw-bold">
+              <i class="fas fa-comment-dots"></i>Lema da Tropa
+            </div>
+            <img src="assets/fala_nogs.png" class="card-img-top rounded-0" alt="Fala Épica do Nogs" />
+            <div class="card-body">
+              <p class="card-text">
+                “<em>A gente não faz o que quer, faz o que precisa... Honey Cousins é minha vida.</em>” <br />
+                - Gabriel Nogs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p><i class="fas fa-infinity"></i> &copy; 2025 Honey Cousins - Arise CrossOver Guild</p>
+    </footer>
+
+    <script>
+      function formatarGrandeza(valor) {
+        const unidades = [
+          { nome: "Qi", valor: 1e18 },
+          { nome: "Qa", valor: 1e15 },
+          { nome: "T", valor: 1e12 },
+          { nome: "B", valor: 1e9 },
+          { nome: "M", valor: 1e6 },
+          { nome: "K", valor: 1e3 },
+        ]
+        for (let i = 0; i < unidades.length; i++) {
+          if (valor >= unidades[i].valor) {
+            return `${removeZeros((valor / unidades[i].valor).toFixed(3))}${unidades[i].nome}`
+          }
+        }
+        return removeZeros(valor.toFixed(3))
+      }
+
+      function removeZeros(numeroStr) {
+        return numeroStr.replace(/\.?0+$/, "")
+      }
+
+      function calcularDano() {
+        const vida = parseFloat(document.getElementById("vidaBoss").value)
+        const unidade = parseFloat(document.getElementById("unidade").value)
+        const tipo = document.getElementById("tipo").value
+
+        if (isNaN(vida) || vida <= 0) {
+          document.getElementById("resultado").innerText = "Informe uma vida válida."
+          return
+        }
+
+        const porcentagem = tipo === "mob" ? 5 : 1
+        const vidaTotal = vida * unidade
+        const dano = vidaTotal * (porcentagem / 100)
+        const vidaRestante = Math.floor((vidaTotal - dano) * 1000) / 1000
+        document.getElementById("resultado").innerHTML = `
+        🔸 Você precisa causar <b>${formatarGrandeza(dano)}</b> de dano (${porcentagem}%).<br>
+        🔹 A vida do inimigo deve cair para <b>${formatarGrandeza(vidaRestante)}</b> ou menos.`
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
